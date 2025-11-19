@@ -30,12 +30,13 @@
         <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
         <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
+
+    <?php
+    // if($_SERVER['REQUEST_METHOD]=="POST"]'){
+//     $name= $_POST['name'];
+//     $email= $_POST['email'];
+//     $comment= $_POST['comment'];
     
-<?php
-if($_SERVER['REQUEST_METHOD]=="POST"]'){
-    $name= $_POST['name'];
-    $email= $_POST['email'];
-    $comment= $_POST['comment'];
 
 
 
@@ -44,23 +45,21 @@ if($_SERVER['REQUEST_METHOD]=="POST"]'){
 
 
 
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "user_info";
-$conn = mysqli_connect($servername, $username, $password, $database);
-if (!$conn) {
-    die("database is not connected!" . mysqli_connect_error());
-} else {
-    echo "connection successfully!";
-}
-
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "user_info";
+    $conn = mysqli_connect($servername, $username, $password, $database);
+    if (!$conn) {
+        die("database is not connected!" . mysqli_connect_error());
+    } else {
+        echo "connection successfully!";
+    }
 
 
 
-?>
+
+    ?>
 </body>
 
 </html>
-
